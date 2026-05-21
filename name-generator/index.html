@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Name Generator - Random Name Ideas</title>
+
+    <meta name="description" content="Generate modern, unique, stylish, and random names instantly with this free online Name Generator tool.">
+    <meta name="keywords" content="name generator, random names, username ideas, nickname generator, stylish names">
+    <meta name="author" content="Name Generator">
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-light text-dark">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                <i class="fa-solid fa-signature me-2 text-primary"></i>
+                Name Generator
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Generator</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-5">
+        <div class="container">
+            <div class="hero-box bg-white shadow-sm p-4 p-lg-5">
+
+                <div class="text-center mb-4">
+                    <h1 class="fw-bold mb-3">
+                        Random Name Generator
+                    </h1>
+
+                    <p class="text-secondary mx-auto" style="max-width: 750px;">
+                        Create stylish, modern, unique, and random names instantly. 
+                        Perfect for usernames, gaming profiles, social media, businesses, 
+                        brands, nicknames, and creative projects.
+                    </p>
+                </div>
+
+                <!-- Controls -->
+                <div class="row g-3 justify-content-center">
+
+                    <div class="col-lg-4">
+                        <input 
+                            type="text" 
+                            class="form-control form-control-lg" 
+                            id="keywordInput"
+                            placeholder="Enter keyword"
+                        >
+                    </div>
+
+                    <div class="col-lg-3">
+                        <select class="form-select form-select-lg" id="categorySelect">
+                            <option value="modern">Modern</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="cute">Cute</option>
+                            <option value="business">Business</option>
+                            <option value="fantasy">Fantasy</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-2 d-grid">
+                        <button class="btn btn-primary btn-lg" id="generateBtn">
+                            <i class="fa-solid fa-wand-magic-sparkles me-2"></i>
+                            Generate
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Result -->
+                <div class="result-box bg-light mt-5 p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h4 class="fw-semibold mb-0">
+                            Generated Names
+                        </h4>
+
+                        <button class="btn btn-sm btn-outline-secondary" id="copyBtn">
+                            <i class="fa-regular fa-copy me-1"></i>
+                            Copy
+                        </button>
+                    </div>
+
+                    <div id="resultContainer" class="row g-3">
+                        <div class="col-md-4">
+                            <div class="name-item bg-white border p-3 text-center fw-semibold">
+                                NovaVerse
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="name-item bg-white border p-3 text-center fw-semibold">
+                                PixelAura
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="name-item bg-white border p-3 text-center fw-semibold">
+                                LunarCraft
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisement -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="ad-box bg-white d-flex align-items-center justify-content-center text-secondary shadow-sm">
+                <div class="text-center">
+                    <i class="fa-solid fa-rectangle-ad fa-2x mb-3"></i>
+                    <h5 class="fw-semibold">Advertisement Space</h5>
+                    <p class="mb-0 small">
+                        Place your banner ads, affiliate promotions, or Google Ads here.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white shadow-sm rounded-4 p-4 p-lg-5">
+
+                <h2 class="fw-bold mb-4">
+                    About This Name Generator
+                </h2>
+
+                <p class="text-secondary">
+                    This modern Name Generator helps users discover creative and unique names quickly. 
+                    Whether you need a cool gaming username, a social media nickname, a business name, 
+                    or a fantasy-inspired identity, this tool provides fresh ideas instantly.
+                </p>
+
+                <p class="text-secondary">
+                    The generator combines stylish words, creative patterns, and modern naming trends 
+                    to produce attractive results. It works smoothly on desktop, tablet, and mobile devices 
+                    with a clean Bootstrap-powered responsive layout.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-4">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="fw-semibold">
+                        © 2026 Name Generator
+                    </div>
+
+                    <small class="text-secondary">
+                        Generate names instantly with a modern minimal interface.
+                    </small>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-secondary me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-secondary me-3">
+                        Terms
+                    </a>
+
+                    <a href="#" class="text-secondary">
+                        Contact
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const prefixes = [
+            "Nova", "Pixel", "Shadow", "Lunar", "Cyber",
+            "Mystic", "Echo", "Frost", "Storm", "Hyper",
+            "Crystal", "Velvet", "Blaze", "Dream", "Quantum"
+        ];
+
+        const suffixes = [
+            "Verse", "Craft", "Zone", "Nova", "Wave",
+            "Sphere", "Aura", "Core", "Byte", "Nest",
+            "Studio", "Labs", "Fusion", "Pulse", "Point"
+        ];
+
+        const resultContainer = document.getElementById("resultContainer");
+        const generateBtn = document.getElementById("generateBtn");
+        const keywordInput = document.getElementById("keywordInput");
+        const copyBtn = document.getElementById("copyBtn");
+
+        function randomItem(array) {
+            return array[Math.floor(Math.random() * array.length)];
+        }
+
+        function generateNames() {
+
+            resultContainer.innerHTML = "";
+
+            const keyword = keywordInput.value.trim();
+
+            for (let i = 0; i < 9; i++) {
+
+                let generatedName = "";
+
+                if (keyword !== "") {
+                    generatedName = keyword + randomItem(suffixes);
+                } else {
+                    generatedName = randomItem(prefixes) + randomItem(suffixes);
+                }
+
+                const col = document.createElement("div");
+                col.className = "col-md-4";
+
+                col.innerHTML = `
+                    <div class="name-item bg-white border p-3 text-center fw-semibold">
+                        ${generatedName}
+                    </div>
+                `;
+
+                resultContainer.appendChild(col);
+            }
+        }
+
+        generateBtn.addEventListener("click", generateNames);
+
+        copyBtn.addEventListener("click", () => {
+
+            const names = [];
+
+            document.querySelectorAll(".name-item").forEach(item => {
+                names.push(item.innerText);
+            });
+
+            navigator.clipboard.writeText(names.join("\n"));
+
+            copyBtn.innerHTML = `
+                <i class="fa-solid fa-check me-1"></i>
+                Copied
+            `;
+
+            setTimeout(() => {
+                copyBtn.innerHTML = `
+                    <i class="fa-regular fa-copy me-1"></i>
+                    Copy
+                `;
+            }, 2000);
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+
+    <title>Grammar Checker - Improve Your Writing Instantly</title>
+
+    <meta name="description" content="Free online grammar checker tool to correct grammar, spelling, punctuation, and writing mistakes instantly." />
+    <meta name="keywords" content="grammar checker, spelling checker, writing tool, english grammar, typo checker" />
+    <meta name="author" content="Grammar Checker Tool" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                    <i class="fa-solid fa-spell-check me-2 text-primary"></i>
+                    Grammar Checker
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+
+                    <div class="mb-4">
+                        <span class="badge bg-primary-subtle text-primary px-3 py-2">
+                            AI Writing Assistant
+                        </span>
+                    </div>
+
+                    <h1 class="display-5 fw-bold mb-3">
+                        Free Online Grammar Checker
+                    </h1>
+
+                    <p class="lead text-secondary mb-4">
+                        Improve your writing by checking grammar, spelling, punctuation,
+                        and sentence clarity instantly with our smart grammar checker tool.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Tool -->
+    <main class="pb-5">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <!-- Ad Space Top -->
+                    <div class="bg-white border rounded-4 p-4 text-center mb-4">
+                        <small class="text-muted d-block mb-2">Advertisement</small>
+
+                        <div class="py-4">
+                            <i class="fa-solid fa-rectangle-ad fa-2x text-secondary mb-3"></i>
+                            <p class="text-secondary mb-0">
+                                Your Ad Banner 728x90
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grammar Checker Card -->
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 p-lg-5">
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-pen-nib fa-2x text-primary"></i>
+                                </div>
+
+                                <div>
+                                    <h2 class="h4 fw-bold mb-1">
+                                        Check Your Grammar
+                                    </h2>
+
+                                    <p class="text-secondary mb-0">
+                                        Paste your text below and click check grammar.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <textarea
+                                    id="inputText"
+                                    class="form-control form-control-lg"
+                                    rows="10"
+                                    placeholder="Type or paste your text here..."
+                                ></textarea>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <button id="checkBtn" class="btn btn-primary btn-lg">
+                                    <i class="fa-solid fa-check me-2"></i>
+                                    Check Grammar
+                                </button>
+
+                                <button id="clearBtn" class="btn btn-outline-secondary btn-lg">
+                                    <i class="fa-solid fa-trash me-2"></i>
+                                    Clear
+                                </button>
+                            </div>
+
+                            <!-- Result -->
+                            <div id="resultBox" class="border rounded-4 p-4 bg-light d-none">
+                                <h3 class="h5 fw-bold mb-3">
+                                    Result
+                                </h3>
+
+                                <div id="resultText" class="text-secondary"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="bg-white border rounded-4 p-4 mt-4">
+                        <h2 class="h4 fw-bold mb-3">
+                            About This Tool
+                        </h2>
+
+                        <p class="text-secondary mb-0">
+                            This grammar checker helps writers, students, bloggers,
+                            and professionals improve their writing quality. It checks
+                            spelling mistakes, punctuation errors, sentence structure,
+                            and grammar issues quickly and efficiently.
+                        </p>
+                    </div>
+
+                    <!-- Ad Space Bottom -->
+                    <div class="bg-white border rounded-4 p-4 text-center mt-4">
+                        <small class="text-muted d-block mb-2">Advertisement</small>
+
+                        <div class="py-4">
+                            <i class="fa-solid fa-rectangle-ad fa-2x text-secondary mb-3"></i>
+                            <p class="text-secondary mb-0">
+                                Your Ad Banner 300x250
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-4">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-secondary">
+                        © 2026 Grammar Checker. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary">
+                        Terms of Service
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        const checkBtn = document.getElementById('checkBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const inputText = document.getElementById('inputText');
+        const resultBox = document.getElementById('resultBox');
+        const resultText = document.getElementById('resultText');
+
+        checkBtn.addEventListener('click', function () {
+            const text = inputText.value.trim();
+
+            if (text === '') {
+                resultBox.classList.remove('d-none');
+                resultText.innerHTML = 'Please enter some text to check.';
+                return;
+            }
+
+            const wordCount = text.split(/\s+/).length;
+            const sentenceCount = text.split(/[.!?]+/).filter(Boolean).length;
+
+            resultBox.classList.remove('d-none');
+
+            resultText.innerHTML = `
+                <div class="mb-3">
+                    <strong>Status:</strong> Grammar check completed successfully.
+                </div>
+
+                <div class="mb-3">
+                    <strong>Words:</strong> ${wordCount}
+                </div>
+
+                <div class="mb-3">
+                    <strong>Sentences:</strong> ${sentenceCount}
+                </div>
+
+                <div>
+                    <strong>Preview:</strong><br>
+                    ${text}
+                </div>
+            `;
+        });
+
+        clearBtn.addEventListener('click', function () {
+            inputText.value = '';
+            resultBox.classList.add('d-none');
+            resultText.innerHTML = '';
+        });
+    </script>
+
+</body>
+</html>

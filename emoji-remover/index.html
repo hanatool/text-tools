@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Emoji Remover Tool - Remove emojis instantly from your text online with a clean and modern interface.">
+    <meta name="keywords" content="emoji remover, remove emoji, text cleaner, emoji cleaner, online tool">
+    <meta name="author" content="Emoji Remover">
+    <meta name="robots" content="index, follow">
+
+    <title>Emoji Remover - Free Online Tool</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                    <i class="fa-regular fa-face-smile me-2 text-primary"></i>
+                    Emoji Remover
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tool">Tool</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">
+                Remove Emojis from Text Instantly
+            </h1>
+
+            <p class="text-secondary mx-auto" style="max-width:700px;">
+                A fast and free online emoji remover tool. Paste your text, click remove, and instantly clean emojis from messages, captions, articles, or documents.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main class="py-5" id="tool">
+        <div class="container">
+
+            <!-- Ad Space -->
+            <div class="ad-box d-flex align-items-center justify-content-center mb-4 shadow-sm">
+                <div class="text-center text-muted">
+                    <i class="fa-solid fa-rectangle-ad fs-1 mb-2"></i>
+                    <div>Advertisement Space</div>
+                </div>
+            </div>
+
+            <!-- Tool -->
+            <div class="card border-0 shadow-sm tool-box">
+                <div class="card-body p-4">
+
+                    <div class="row g-4">
+
+                        <!-- Input -->
+                        <div class="col-lg-6">
+                            <label class="form-label fw-semibold">
+                                <i class="fa-solid fa-pen-to-square me-2 text-primary"></i>
+                                Input Text
+                            </label>
+
+                            <textarea 
+                                class="form-control"
+                                id="inputText"
+                                placeholder="Paste your text with emojis here..."
+                            ></textarea>
+                        </div>
+
+                        <!-- Output -->
+                        <div class="col-lg-6">
+                            <label class="form-label fw-semibold">
+                                <i class="fa-solid fa-file-lines me-2 text-success"></i>
+                                Clean Result
+                            </label>
+
+                            <textarea 
+                                class="form-control bg-light"
+                                id="outputText"
+                                placeholder="Clean text will appear here..."
+                                readonly
+                            ></textarea>
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+
+                        <button class="btn btn-primary px-4" id="removeBtn">
+                            <i class="fa-solid fa-wand-magic-sparkles me-2"></i>
+                            Remove Emojis
+                        </button>
+
+                        <button class="btn btn-success px-4" id="copyBtn">
+                            <i class="fa-regular fa-copy me-2"></i>
+                            Copy Result
+                        </button>
+
+                        <button class="btn btn-outline-secondary px-4" id="clearBtn">
+                            <i class="fa-solid fa-trash me-2"></i>
+                            Clear
+                        </button>
+
+                    </div>
+
+                    <!-- Result Info -->
+                    <div class="mt-4">
+                        <div class="alert alert-light border mb-0" id="statusBox">
+                            Ready to remove emojis from your text.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Description -->
+            <section class="mt-5" id="about">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+
+                        <h2 class="h4 fw-bold mb-3">
+                            About This Tool
+                        </h2>
+
+                        <p class="text-secondary">
+                            Emoji Remover is a simple online utility designed to help users clean text quickly and efficiently. Whether you are editing captions, preparing professional documents, cleaning copied content, or formatting messages, this tool makes the process fast and easy.
+                        </p>
+
+                        <p class="text-secondary mb-0">
+                            The interface is lightweight, responsive, and optimized for desktop and mobile devices. No registration or downloads are required.
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Ad -->
+            <div class="ad-box d-flex align-items-center justify-content-center mt-5 shadow-sm">
+                <div class="text-center text-muted">
+                    <i class="fa-solid fa-rectangle-ad fs-1 mb-2"></i>
+                    <div>Responsive Ad Placement</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="fw-semibold">
+                        © 2026 Emoji Remover
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="footer-link text-secondary me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="footer-link text-secondary">
+                        Contact
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        const inputText = document.getElementById('inputText');
+        const outputText = document.getElementById('outputText');
+        const removeBtn = document.getElementById('removeBtn');
+        const copyBtn = document.getElementById('copyBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const statusBox = document.getElementById('statusBox');
+
+        function removeEmojis(text) {
+            return text.replace(
+                /([\u2700-\u27BF]|[\uE000-\uF8FF]|[\uD83C-\uDBFF\uDC00-\uDFFF]+|[\u2011-\u26FF]|\uD83D[\uDC00-\uDE4F])/g,
+                ''
+            );
+        }
+
+        removeBtn.addEventListener('click', () => {
+            const cleanText = removeEmojis(inputText.value);
+
+            outputText.value = cleanText;
+
+            statusBox.innerHTML = `
+                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                Emojis removed successfully.
+            `;
+        });
+
+        copyBtn.addEventListener('click', () => {
+
+            if(outputText.value.trim() === ''){
+                statusBox.innerHTML = `
+                    <i class="fa-solid fa-circle-exclamation text-warning me-2"></i>
+                    Nothing to copy.
+                `;
+                return;
+            }
+
+            navigator.clipboard.writeText(outputText.value);
+
+            statusBox.innerHTML = `
+                <i class="fa-solid fa-copy text-primary me-2"></i>
+                Result copied to clipboard.
+            `;
+        });
+
+        clearBtn.addEventListener('click', () => {
+            inputText.value = '';
+            outputText.value = '';
+
+            statusBox.innerHTML = `
+                <i class="fa-solid fa-broom text-secondary me-2"></i>
+                Text cleared successfully.
+            `;
+        });
+    </script>
+
+</body>
+</html>

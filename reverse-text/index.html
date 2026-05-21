@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+
+    <title>Reverse Text Tool</title>
+
+    <meta name="description" content="Free online reverse text tool to instantly reverse letters, words, and sentences easily." />
+    <meta name="keywords" content="reverse text, text reverser, reverse words, online tool" />
+    <meta name="author" content="Reverse Text Tool" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body class="bg-light text-dark d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                    <i class="fa-solid fa-rotate-left me-2"></i>
+                    Reverse Text
+                </a>
+
+                <nav>
+                    <a href="#" class="text-decoration-none text-secondary me-3">Home</a>
+                    <a href="#" class="text-decoration-none text-secondary me-3">Tools</a>
+                    <a href="#" class="text-decoration-none text-secondary">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow-1">
+
+        <!-- Hero -->
+        <section class="py-5 bg-white border-bottom">
+            <div class="container text-center">
+
+                <h1 class="fw-bold mb-3">
+                    Reverse Text Tool
+                </h1>
+
+                <p class="text-secondary mx-auto" style="max-width: 700px;">
+                    Easily reverse text, words, characters, or full sentences instantly using this free online reverse text generator.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Tool -->
+        <section class="py-5">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+
+                        <div class="card border-0 shadow-sm rounded-4">
+                            <div class="card-body p-4">
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">
+                                        Enter Text
+                                    </label>
+
+                                    <textarea 
+                                        id="inputText"
+                                        class="form-control form-control-lg"
+                                        rows="6"
+                                        placeholder="Type or paste your text here..."
+                                    ></textarea>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <button class="btn btn-dark px-4" onclick="reverseText()">
+                                        <i class="fa-solid fa-arrow-rotate-left me-2"></i>
+                                        Reverse
+                                    </button>
+
+                                    <button class="btn btn-outline-secondary px-4" onclick="copyText()">
+                                        <i class="fa-regular fa-copy me-2"></i>
+                                        Copy
+                                    </button>
+
+                                    <button class="btn btn-outline-danger px-4" onclick="clearText()">
+                                        <i class="fa-solid fa-trash me-2"></i>
+                                        Clear
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <label class="form-label fw-semibold">
+                                        Reversed Result
+                                    </label>
+
+                                    <textarea 
+                                        id="outputText"
+                                        class="form-control form-control-lg bg-light"
+                                        rows="6"
+                                        placeholder="Reversed text will appear here..."
+                                        readonly
+                                    ></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ad Space -->
+        <section class="pb-5">
+            <div class="container">
+
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-body text-center py-5">
+
+                        <p class="text-uppercase text-secondary small mb-2">
+                            Advertisement
+                        </p>
+
+                        <div class="border rounded-4 bg-light d-flex align-items-center justify-content-center"
+                             style="height: 180px;">
+                            <div class="text-secondary">
+                                <i class="fa-solid fa-rectangle-ad fs-1 mb-3"></i>
+                                <p class="mb-0">Your Ad Space Here</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="pb-5">
+            <div class="container">
+
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-body p-4">
+
+                        <h2 class="h4 fw-bold mb-3">
+                            About This Tool
+                        </h2>
+
+                        <p class="text-secondary mb-0">
+                            This reverse text tool helps you quickly reverse characters, words, or complete sentences instantly. It works directly in your browser, is fully responsive, and supports fast text transformation without any installation.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top mt-auto">
+        <div class="container py-4">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-secondary">
+                        © 2026 Reverse Text Tool. All rights reserved.
+                    </span>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-secondary text-decoration-none me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-secondary text-decoration-none">
+                        Terms
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function reverseText() {
+            const input = document.getElementById('inputText').value;
+            const reversed = input.split('').reverse().join('');
+            document.getElementById('outputText').value = reversed;
+        }
+
+        function clearText() {
+            document.getElementById('inputText').value = '';
+            document.getElementById('outputText').value = '';
+        }
+
+        function copyText() {
+            const output = document.getElementById('outputText');
+
+            if(output.value.trim() === '') {
+                alert('No text to copy.');
+                return;
+            }
+
+            output.select();
+            output.setSelectionRange(0, 99999);
+
+            navigator.clipboard.writeText(output.value);
+
+            alert('Reversed text copied successfully.');
+        }
+    </script>
+
+</body>
+</html>

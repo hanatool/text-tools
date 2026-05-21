@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Free modern plagiarism checker tool to compare text similarity instantly with responsive Bootstrap design.">
+    <meta name="keywords" content="plagiarism checker, duplicate content checker, seo tools, plagiarism detector">
+    <meta name="author" content="Plagiarism Checker">
+    <meta name="robots" content="index, follow">
+
+    <title>Plagiarism Checker - Free Duplicate Content Tool</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-light" style="font-family: 'Poppins', sans-serif;">
+
+    <!-- HEADER -->
+    <header class="border-bottom bg-white shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                    <i class="fa-solid fa-shield-halved text-primary me-2"></i>
+                    Plagiarism Checker
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#checker">Checker</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HERO -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-primary-subtle text-primary px-3 py-2 mb-3">
+                        Free Online Tool
+                    </span>
+
+                    <h1 class="fw-bold display-5 mb-3">
+                        Check Plagiarism Instantly
+                    </h1>
+
+                    <p class="text-secondary fs-6 mb-4">
+                        Use our modern plagiarism checker to compare text similarity, detect duplicate content,
+                        and improve originality for articles, blogs, essays, and academic writing.
+                    </p>
+
+                    <a href="#checker" class="btn btn-primary btn-lg px-4">
+                        <i class="fa-solid fa-magnifying-glass me-2"></i>
+                        Start Checking
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVERTISEMENT -->
+    <section class="pb-4">
+        <div class="container">
+            <div class="bg-white border rounded-4 shadow-sm p-4 text-center">
+                <div class="small text-uppercase text-secondary mb-2">
+                    Advertisement Space
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center bg-light rounded-4" style="height:120px;">
+                    <div>
+                        <i class="fa-solid fa-rectangle-ad fa-3x text-secondary mb-3"></i>
+                        <p class="text-secondary mb-0">
+                            Place your banner ads here
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECKER -->
+    <section class="pb-5" id="checker">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 p-lg-5">
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width:60px;height:60px;">
+                                    <i class="fa-solid fa-file-lines fa-lg"></i>
+                                </div>
+
+                                <div>
+                                    <h2 class="fw-bold mb-1">
+                                        Plagiarism Detection Tool
+                                    </h2>
+
+                                    <p class="text-secondary mb-0">
+                                        Paste your content below and compare similarity instantly.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Original Text
+                                    </label>
+
+                                    <textarea class="form-control rounded-4 p-3" id="text1" rows="12"
+                                        placeholder="Paste original content here..."></textarea>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Compared Text
+                                    </label>
+
+                                    <textarea class="form-control rounded-4 p-3" id="text2" rows="12"
+                                        placeholder="Paste compared content here..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="d-grid d-md-flex gap-3 mt-4">
+                                <button class="btn btn-primary px-4 py-3 rounded-4" id="checkBtn">
+                                    <i class="fa-solid fa-check me-2"></i>
+                                    Check Similarity
+                                </button>
+
+                                <button class="btn btn-outline-secondary px-4 py-3 rounded-4" id="clearBtn">
+                                    <i class="fa-solid fa-trash me-2"></i>
+                                    Clear Text
+                                </button>
+                            </div>
+
+                            <!-- RESULT -->
+                            <div class="mt-5">
+                                <div class="bg-light border rounded-4 p-4">
+                                    <h5 class="fw-bold mb-3">
+                                        Result
+                                    </h5>
+
+                                    <div class="row text-center g-3">
+
+                                        <div class="col-md-4">
+                                            <div class="bg-white border rounded-4 p-4 h-100">
+                                                <i class="fa-solid fa-percent fa-2x text-primary mb-3"></i>
+                                                <h3 class="fw-bold" id="similarityResult">
+                                                    0%
+                                                </h3>
+                                                <p class="text-secondary mb-0">
+                                                    Similarity Score
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="bg-white border rounded-4 p-4 h-100">
+                                                <i class="fa-solid fa-file-word fa-2x text-success mb-3"></i>
+                                                <h3 class="fw-bold" id="wordCount">
+                                                    0
+                                                </h3>
+                                                <p class="text-secondary mb-0">
+                                                    Total Words
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="bg-white border rounded-4 p-4 h-100">
+                                                <i class="fa-solid fa-circle-info fa-2x text-warning mb-3"></i>
+                                                <h3 class="fw-bold" id="statusResult">
+                                                    Safe
+                                                </h3>
+                                                <p class="text-secondary mb-0">
+                                                    Content Status
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="pb-5" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5 border">
+
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <i class="fa-solid fa-bolt fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold">
+                                        Fast Detection
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        Analyze duplicate text instantly with lightweight processing.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <i class="fa-solid fa-shield fa-3x text-success mb-3"></i>
+                                    <h5 class="fw-bold">
+                                        Secure Usage
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        Your content remains private and is not stored permanently.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <i class="fa-solid fa-mobile-screen fa-3x text-warning mb-3"></i>
+                                    <h5 class="fw-bold">
+                                        Responsive Design
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        Fully optimized for desktop, tablet, and mobile devices.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-top py-4" id="contact">
+        <div class="container">
+            <div class="row align-items-center g-3">
+
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 class="fw-bold mb-1">
+                        Plagiarism Checker
+                    </h5>
+
+                    <p class="text-secondary small mb-0">
+                        Free online plagiarism and duplicate content detection tool.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="mb-2">
+                        <a href="#" class="text-decoration-none text-secondary me-3">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-secondary me-3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-secondary me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-secondary">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <small class="text-secondary">
+                        © 2026 All Rights Reserved.
+                    </small>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Checker Script -->
+    <script>
+        const text1 = document.getElementById("text1");
+        const text2 = document.getElementById("text2");
+        const checkBtn = document.getElementById("checkBtn");
+        const clearBtn = document.getElementById("clearBtn");
+
+        const similarityResult = document.getElementById("similarityResult");
+        const wordCount = document.getElementById("wordCount");
+        const statusResult = document.getElementById("statusResult");
+
+        function calculateSimilarity(a, b) {
+            const wordsA = a.toLowerCase().split(/\s+/).filter(Boolean);
+            const wordsB = b.toLowerCase().split(/\s+/).filter(Boolean);
+
+            const matchedWords = wordsA.filter(word => wordsB.includes(word));
+
+            const uniqueMatches = [...new Set(matchedWords)];
+
+            const averageLength = (wordsA.length + wordsB.length) / 2;
+
+            if (averageLength === 0) return 0;
+
+            return Math.round((uniqueMatches.length / averageLength) * 100);
+        }
+
+        checkBtn.addEventListener("click", () => {
+            const content1 = text1.value.trim();
+            const content2 = text2.value.trim();
+
+            if (!content1 || !content2) {
+                alert("Please enter both text fields.");
+                return;
+            }
+
+            const similarity = calculateSimilarity(content1, content2);
+
+            similarityResult.textContent = similarity + "%";
+
+            const totalWords =
+                content1.split(/\s+/).length +
+                content2.split(/\s+/).length;
+
+            wordCount.textContent = totalWords;
+
+            if (similarity >= 70) {
+                statusResult.textContent = "High";
+            } else if (similarity >= 40) {
+                statusResult.textContent = "Medium";
+            } else {
+                statusResult.textContent = "Safe";
+            }
+        });
+
+        clearBtn.addEventListener("click", () => {
+            text1.value = "";
+            text2.value = "";
+
+            similarityResult.textContent = "0%";
+            wordCount.textContent = "0";
+            statusResult.textContent = "Safe";
+        });
+    </script>
+
+</body>
+
+</html>

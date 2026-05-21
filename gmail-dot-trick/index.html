@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+
+    <title>Gmail Dot Trick Generator</title>
+
+    <meta name="description" content="Generate Gmail dot variations instantly with one click copy feature. Responsive Bootstrap modern layout." />
+    <meta name="keywords" content="gmail dot trick, gmail generator, gmail variations, email trick" />
+    <meta name="author" content="OpenAI" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+<body class="bg-light" style="font-family: Inter, sans-serif;">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                    <i class="fa-solid fa-envelope text-primary me-2"></i>
+                    Gmail Dot Trick
+                </a>
+
+                <button class="btn btn-primary rounded-pill px-4">
+                    Generator
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="py-5">
+        <div class="container">
+
+            <!-- Description -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">
+                        Generate Gmail Dot Variations
+                    </h2>
+
+                    <p class="text-secondary">
+                        This tool creates Gmail dot trick combinations automatically.
+                        Enter your Gmail username and generate multiple email variations
+                        with instant copy support.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Generator -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+
+                            <label class="form-label fw-semibold">
+                                Gmail Username
+                            </label>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-white">
+                                    <i class="fa-solid fa-at"></i>
+                                </span>
+
+                                <input
+                                    type="text"
+                                    id="gmailInput"
+                                    class="form-control"
+                                    placeholder="examplegmail"
+                                >
+                            </div>
+
+                            <button
+                                class="btn btn-primary w-100 rounded-3 py-2 mb-4"
+                                onclick="generateDots()"
+                            >
+                                <i class="fa-solid fa-wand-magic-sparkles me-2"></i>
+                                Generate Variations
+                            </button>
+
+                            <!-- Result -->
+                            <div id="resultContainer"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Ads -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body text-center py-5">
+
+                            <p class="text-muted mb-2">
+                                Advertisement Space
+                            </p>
+
+                            <i class="fa-solid fa-rectangle-ad fa-3x text-secondary"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-top bg-white mt-5">
+        <div class="container py-4 text-center">
+            <p class="mb-0 text-secondary">
+                © 2026 Gmail Dot Trick Generator. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function generateDots() {
+
+            const input = document.getElementById('gmailInput').value.trim();
+            const resultContainer = document.getElementById('resultContainer');
+
+            resultContainer.innerHTML = '';
+
+            if (input.length < 2) {
+                resultContainer.innerHTML = `
+                    <div class="alert alert-danger rounded-3">
+                        Please enter a valid Gmail username.
+                    </div>
+                `;
+                return;
+            }
+
+            let results = [];
+
+            for (let i = 1; i < input.length; i++) {
+                let variation =
+                    input.slice(0, i) +
+                    '.' +
+                    input.slice(i);
+
+                results.push(variation + '@gmail.com');
+            }
+
+            let html = `
+                <h5 class="fw-bold mb-3">
+                    Generated Variations
+                </h5>
+            `;
+
+            results.forEach((email, index) => {
+                html += `
+                    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between border rounded-3 p-3 mb-3 bg-white">
+                        
+                        <div class="mb-2 mb-md-0 text-break">
+                            <i class="fa-solid fa-envelope text-primary me-2"></i>
+                            ${email}
+                        </div>
+
+                        <button
+                            class="btn btn-outline-primary rounded-pill"
+                            onclick="copyEmail('${email}')"
+                        >
+                            <i class="fa-regular fa-copy me-1"></i>
+                            Copy
+                        </button>
+
+                    </div>
+                `;
+            });
+
+            resultContainer.innerHTML = html;
+        }
+
+        function copyEmail(email) {
+
+            navigator.clipboard.writeText(email);
+
+            alert('Copied: ' + email);
+        }
+    </script>
+
+</body>
+</html>

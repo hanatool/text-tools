@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+
+  <title>Bio Generator</title>
+
+  <meta name="description" content="Create stylish social media bios instantly with this modern Bio Generator tool." />
+  <meta name="keywords" content="bio generator, instagram bio, tiktok bio, social media bio, modern bio tool" />
+  <meta name="author" content="Bio Generator" />
+
+  <link rel="icon" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/person-circle.svg">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-light text-dark">
+
+  <!-- Header -->
+  <header class="border-bottom bg-white shadow-none sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+          <i class="fa-solid fa-user-pen fs-4 me-2 text-primary"></i>
+          Bio Generator
+        </a>
+
+        <button class="btn btn-outline-primary btn-sm">
+          Generate
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+
+          <span class="badge bg-primary-subtle text-primary mb-3">
+            Modern Bio Tool
+          </span>
+
+          <h2 class="display-6 fw-bold mb-3">
+            Create Stylish Social Media Bios Instantly
+          </h2>
+
+          <p class="text-secondary mb-4">
+            Generate unique and modern bios for Instagram, TikTok, Twitter, YouTube,
+            and other social platforms in seconds.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Generator -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold">
+                  Enter Your Name or Keyword
+                </label>
+
+                <input type="text" id="bioInput" class="form-control form-control-lg"
+                  placeholder="Example: Gamer, Developer, Creator">
+              </div>
+
+              <div class="d-grid">
+                <button class="btn btn-primary btn-lg" id="generateBtn">
+                  <i class="fa-solid fa-wand-magic-sparkles me-2"></i>
+                  Generate Bio
+                </button>
+              </div>
+
+              <div class="mt-4">
+                <label class="form-label fw-semibold">
+                  Generated Bio
+                </label>
+
+                <textarea id="bioOutput" class="form-control" rows="5" readonly
+                  placeholder="Your generated bio will appear here..."></textarea>
+              </div>
+
+              <div class="d-grid mt-3">
+                <button class="btn btn-outline-dark" id="copyBtn">
+                  <i class="fa-regular fa-copy me-2"></i>
+                  Copy Bio
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+
+              <h3 class="h5 fw-bold mb-3">
+                About This Tool
+              </h3>
+
+              <p class="text-secondary mb-0">
+                Bio Generator helps users create creative and attractive social media bios
+                with a simple and modern interface. Perfect for influencers, creators,
+                gamers, developers, and online businesses.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advertisement -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body text-center p-5">
+
+              <p class="text-secondary small mb-2">
+                Advertisement Space
+              </p>
+
+              <div class="bg-light border rounded-3 py-5">
+                <i class="fa-solid fa-rectangle-ad fs-1 text-secondary mb-3"></i>
+
+                <p class="m-0 text-secondary">
+                  Your Ad Banner Here
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-top bg-white py-4">
+    <div class="container text-center">
+
+      <p class="mb-2 fw-semibold">
+        Bio Generator
+      </p>
+
+      <p class="text-secondary small mb-0">
+        © 2026 Bio Generator. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script -->
+  <script>
+    const bios = [
+      "✨ Living life one dream at a time",
+      "🎮 Gamer | Creator | Dreamer",
+      "🚀 Building my future every day",
+      "📸 Capturing moments and memories",
+      "💻 Developer with creative ideas",
+      "🌎 Exploring the world with passion",
+      "🔥 Turning goals into reality",
+      "🎵 Music lover and coffee addict",
+      "📚 Learning something new every day",
+      "🌟 Simple person with big ambitions"
+    ];
+
+    const generateBtn = document.getElementById("generateBtn");
+    const copyBtn = document.getElementById("copyBtn");
+    const bioInput = document.getElementById("bioInput");
+    const bioOutput = document.getElementById("bioOutput");
+
+    generateBtn.addEventListener("click", () => {
+      const keyword = bioInput.value.trim();
+      const randomBio = bios[Math.floor(Math.random() * bios.length)];
+
+      if (keyword !== "") {
+        bioOutput.value = keyword + " • " + randomBio;
+      } else {
+        bioOutput.value = randomBio;
+      }
+    });
+
+    copyBtn.addEventListener("click", () => {
+      if (bioOutput.value.trim() === "") {
+        alert("Please generate a bio first.");
+        return;
+      }
+
+      navigator.clipboard.writeText(bioOutput.value);
+
+      copyBtn.innerHTML =
+        '<i class="fa-solid fa-check me-2"></i>Copied';
+
+      setTimeout(() => {
+        copyBtn.innerHTML =
+          '<i class="fa-regular fa-copy me-2"></i>Copy Bio';
+      }, 2000);
+    });
+  </script>
+
+</body>
+
+</html>

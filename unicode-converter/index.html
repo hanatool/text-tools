@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+    <meta name="description" content="Free Unicode Converter Tool to encode and decode Unicode text instantly." />
+    <meta name="keywords" content="Unicode Converter, Unicode Encoder, Unicode Decoder, Text Tools" />
+    <meta name="author" content="Unicode Converter" />
+
+    <title>Unicode Converter</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                    <i class="fa-solid fa-language me-2 text-primary"></i>
+                    Unicode Converter
+                </a>
+
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow-1">
+        <div class="container py-5">
+
+            <!-- Description -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Convert Text to Unicode Instantly</h2>
+                <p class="text-secondary mx-auto" style="max-width: 700px;">
+                    Simple and responsive Unicode Converter tool to encode plain text into Unicode
+                    format and decode Unicode back into readable text.
+                </p>
+            </div>
+
+            <!-- Ads Top -->
+            <div class="bg-white border rounded-4 shadow-sm p-4 text-center mb-4">
+                <small class="text-muted d-block mb-2">Advertisement Space</small>
+                <div class="py-4">
+                    <i class="fa-solid fa-rectangle-ad fa-3x text-secondary"></i>
+                </div>
+            </div>
+
+            <!-- Converter -->
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4">
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">
+                            Input Text
+                        </label>
+
+                        <textarea 
+                            id="inputText"
+                            class="form-control"
+                            rows="6"
+                            placeholder="Enter your text here..."
+                        ></textarea>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <button class="btn btn-primary" onclick="encodeUnicode()">
+                            <i class="fa-solid fa-lock me-1"></i>
+                            Encode
+                        </button>
+
+                        <button class="btn btn-success" onclick="decodeUnicode()">
+                            <i class="fa-solid fa-unlock me-1"></i>
+                            Decode
+                        </button>
+
+                        <button class="btn btn-secondary" onclick="copyResult()">
+                            <i class="fa-solid fa-copy me-1"></i>
+                            Copy
+                        </button>
+
+                        <button class="btn btn-outline-danger" onclick="clearFields()">
+                            <i class="fa-solid fa-trash me-1"></i>
+                            Clear
+                        </button>
+                    </div>
+
+                    <div>
+                        <label class="form-label fw-semibold">
+                            Result
+                        </label>
+
+                        <textarea 
+                            id="outputText"
+                            class="form-control"
+                            rows="6"
+                            placeholder="Result will appear here..."
+                            readonly
+                        ></textarea>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Ads Bottom -->
+            <div class="bg-white border rounded-4 shadow-sm p-4 text-center mt-4">
+                <small class="text-muted d-block mb-2">Advertisement Space</small>
+                <div class="py-4">
+                    <i class="fa-solid fa-rectangle-ad fa-3x text-secondary"></i>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top mt-auto">
+        <div class="container py-4 text-center">
+            <p class="mb-0 text-secondary">
+                © 2026 Unicode Converter. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        function encodeUnicode() {
+            const input = document.getElementById('inputText').value;
+
+            let result = '';
+
+            for (let i = 0; i < input.length; i++) {
+                result += '\\u' + input.charCodeAt(i).toString(16).padStart(4, '0');
+            }
+
+            document.getElementById('outputText').value = result;
+        }
+
+        function decodeUnicode() {
+            const input = document.getElementById('inputText').value;
+
+            try {
+                const result = input.replace(/\\\\u([0-9a-fA-F]{4})/g, function(match, grp) {
+                    return String.fromCharCode(parseInt(grp, 16));
+                });
+
+                document.getElementById('outputText').value = result;
+            } catch (error) {
+                alert('Invalid Unicode format.');
+            }
+        }
+
+        function copyResult() {
+            const output = document.getElementById('outputText');
+
+            output.select();
+            output.setSelectionRange(0, 99999);
+
+            navigator.clipboard.writeText(output.value);
+
+            alert('Copied to clipboard!');
+        }
+
+        function clearFields() {
+            document.getElementById('inputText').value = '';
+            document.getElementById('outputText').value = '';
+        }
+    </script>
+
+</body>
+</html>
