@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
-    <meta name="description" content="Modern Typing Speed Test website with responsive Bootstrap layout, typing accuracy tracker, WPM calculator, and clean white minimalist design.">
-    <meta name="keywords" content="typing speed test, typing game, typing practice, typing challenge, WPM test, keyboard speed">
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+        name='viewport' />
+    <meta name="description"
+        content="Modern Typing Speed Test website with responsive Bootstrap layout, typing accuracy tracker, WPM calculator, and clean white minimalist design.">
+    <meta name="keywords"
+        content="typing speed test, typing game, typing practice, typing challenge, WPM test, keyboard speed">
     <meta name="author" content="Typing Speed Test">
     <meta name="robots" content="index, follow">
 
@@ -17,272 +21,281 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://hanapha.com/banner/popunder.js"></script>
+</head>
 
-    <body class="bg-light">
+<body class="bg-light text-dark">
 
-        <!-- HEADER -->
-        <header class="border-bottom bg-white sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
-                        <i class="fa-solid fa-keyboard text-primary me-2"></i>Typing Speed Test
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Practice</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Leaderboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!-- HERO -->
-        <section class="py-5 bg-white border-bottom">
-            <div class="container text-center">
-                <h1 class="fw-bold display-5 mb-3">
-                    Improve Your Typing Speed
-                </h1>
-
-                <p class="text-secondary mx-auto" style="max-width: 750px;">
-                    Test your typing speed, improve your keyboard accuracy, and challenge yourself with a modern typing speed experience. Track your WPM, accuracy, and total typed characters in real time.
-                </p>
-            </div>
-        </section>
-
-        <!-- AD SPACE -->
-        <section class="py-4">
+    <!-- HEADER -->
+    <header class="border-bottom bg-white sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <div class="bg-white border rounded-4 p-1 text-center shadow-sm">
-                    <script src="https://hanapha.com/banner/nativ.js"></script>
+                <a class="navbar-brand fw-bold text-decoration-none text-dark" href="#">
+                    <i class="fa-solid fa-keyboard text-primary me-2"></i>Typing Speed Test
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Practice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Leaderboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
+    </header>
 
-        <!-- MAIN TEST -->
-        <section class="pb-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
+    <!-- HERO -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container text-center">
+            <h1 class="fw-bold display-5 mb-3">
+                Improve Your Typing Speed
+            </h1>
 
-                        <div class="card border-0 shadow-sm rounded-4">
-                            <div class="card-body p-4 p-lg-5">
+            <p class="text-secondary mx-auto" style="max-width: 750px;">
+                Test your typing speed, improve your keyboard accuracy, and challenge yourself with a modern typing
+                speed experience. Track your WPM, accuracy, and total typed characters in real time.
+            </p>
+        </div>
+    </section>
 
-                                <div class="d-flex flex-wrap justify-content-between gap-3 mb-4">
+    <!-- AD SPACE -->
+    <section class="py-4">
+        <div class="container">
+            <div class="bg-white border rounded-4 p-1 text-center shadow-sm">
+                <script src="https://hanapha.com/banner/nativ.js"></script>
+            </div>
+        </div>
+    </section>
 
-                                    <div class="text-center flex-fill bg-light rounded-4 p-3">
-                                        <h6 class="text-secondary mb-1">Time</h6>
-                                        <h3 class="fw-bold text-primary" id="time">60</h3>
-                                    </div>
+    <!-- MAIN TEST -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
 
-                                    <div class="text-center flex-fill bg-light rounded-4 p-3">
-                                        <h6 class="text-secondary mb-1">WPM</h6>
-                                        <h3 class="fw-bold text-success" id="wpm">0</h3>
-                                    </div>
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 p-lg-5">
 
-                                    <div class="text-center flex-fill bg-light rounded-4 p-3">
-                                        <h6 class="text-secondary mb-1">Accuracy</h6>
-                                        <h3 class="fw-bold text-danger" id="accuracy">100%</h3>
-                                    </div>
+                            <div class="d-flex flex-wrap justify-content-between gap-3 mb-4">
 
+                                <div class="text-center flex-fill bg-light rounded-4 p-3">
+                                    <h6 class="text-secondary mb-1">Time</h6>
+                                    <h3 class="fw-bold text-primary" id="time">60</h3>
                                 </div>
 
-                                <div class="bg-light border rounded-4 p-4 mb-4">
-                                    <p class="mb-0 fs-5 text-dark" id="paragraph">
-                                        The quick brown fox jumps over the lazy dog while students practice typing faster every day with better focus and keyboard accuracy.
-                                    </p>
+                                <div class="text-center flex-fill bg-light rounded-4 p-3">
+                                    <h6 class="text-secondary mb-1">WPM</h6>
+                                    <h3 class="fw-bold text-success" id="wpm">0</h3>
                                 </div>
 
-                                <textarea
-                                    id="inputText"
-                                    class="form-control form-control-lg rounded-4"
-                                    rows="6"
-                                    placeholder="Start typing here..."
-                                ></textarea>
-
-                                <div class="d-flex flex-wrap gap-3 mt-4">
-
-                                    <button class="btn btn-primary btn-lg rounded-pill px-4" id="startBtn">
-                                        <i class="fa-solid fa-play me-2"></i>Start Test
-                                    </button>
-
-                                    <button class="btn btn-outline-secondary btn-lg rounded-pill px-4" id="resetBtn">
-                                        <i class="fa-solid fa-rotate-right me-2"></i>Reset
-                                    </button>
-
+                                <div class="text-center flex-fill bg-light rounded-4 p-3">
+                                    <h6 class="text-secondary mb-1">Accuracy</h6>
+                                    <h3 class="fw-bold text-danger" id="accuracy">100%</h3>
                                 </div>
 
                             </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
+                            <div class="bg-light border rounded-4 p-4 mb-4">
+                                <p class="mb-0 fs-5 text-dark" id="paragraph">
+                                    The quick brown fox jumps over the lazy dog while students practice typing faster
+                                    every day with better focus and keyboard accuracy.
+                                </p>
+                            </div>
 
-        <!-- DESCRIPTION -->
-        <section class="pb-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
+                            <textarea id="inputText" class="form-control form-control-lg rounded-4" rows="6"
+                                placeholder="Start typing here..."></textarea>
 
-                        <div class="bg-white border rounded-4 shadow-sm p-4 p-lg-5">
+                            <div class="d-flex flex-wrap gap-3 mt-4">
 
-                            <h2 class="fw-bold mb-3">
-                                Why Use This Typing Speed Test?
-                            </h2>
+                                <button class="btn btn-primary btn-lg rounded-pill px-4" id="startBtn">
+                                    <i class="fa-solid fa-play me-2"></i>Start Test
+                                </button>
 
-                            <p class="text-secondary">
-                                This modern typing speed test is designed for students, professionals, writers, and gamers who want to improve their typing performance. The responsive interface works perfectly on desktop, tablet, and mobile devices.
-                            </p>
+                                <button class="btn btn-outline-secondary btn-lg rounded-pill px-4" id="resetBtn">
+                                    <i class="fa-solid fa-rotate-right me-2"></i>Reset
+                                </button>
 
-                            <p class="text-secondary mb-0">
-                                Measure your words per minute (WPM), monitor your typing accuracy, and build better keyboard habits through daily practice. A clean Bootstrap layout keeps the experience fast, lightweight, and distraction-free.
-                            </p>
+                            </div>
 
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="bg-white border-top py-4">
-            <div class="container">
-                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
-
-                    <div>
-                        <h5 class="fw-bold mb-1">
-                            <i class="fa-solid fa-keyboard text-primary me-2"></i>
-                            Typing Speed Test
-                        </h5>
-
-                        <small class="text-secondary">
-                            Modern typing practice platform for better speed and accuracy.
-                        </small>
-                    </div>
-
-                    <div class="text-secondary small">
-                        © <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Typing Speed Test. All rights reserved.
-                    </div>
 
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- DESCRIPTION -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
 
-        <!-- Typing Test Script -->
-        <script>
-            const paragraph = document.getElementById("paragraph").innerText;
-            const inputText = document.getElementById("inputText");
-            const timeDisplay = document.getElementById("time");
-            const wpmDisplay = document.getElementById("wpm");
-            const accuracyDisplay = document.getElementById("accuracy");
-            const startBtn = document.getElementById("startBtn");
-            const resetBtn = document.getElementById("resetBtn");
+                    <div class="bg-white border rounded-4 shadow-sm p-4 p-lg-5">
 
-            let timer = 60;
-            let interval = null;
-            let started = false;
+                        <h2 class="fw-bold mb-3">
+                            Why Use This Typing Speed Test?
+                        </h2>
 
-            function startTimer() {
-                interval = setInterval(() => {
-                    timer--;
-                    timeDisplay.innerText = timer;
+                        <p class="text-secondary">
+                            This modern typing speed test is designed for students, professionals, writers, and gamers
+                            who want to improve their typing performance. The responsive interface works perfectly on
+                            desktop, tablet, and mobile devices.
+                        </p>
 
-                    calculateResults();
+                        <p class="text-secondary mb-0">
+                            Measure your words per minute (WPM), monitor your typing accuracy, and build better keyboard
+                            habits through daily practice. A clean Bootstrap layout keeps the experience fast,
+                            lightweight, and distraction-free.
+                        </p>
 
-                    if (timer <= 0) {
-                        clearInterval(interval);
-                        inputText.disabled = true;
-                    }
-                }, 1000);
-            }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            function calculateResults() {
-                const typed = inputText.value.trim();
-                const typedWords = typed.split(/\s+/).filter(word => word !== "").length;
+    <!-- FOOTER -->
+    <footer class="bg-white border-top py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
 
-                const minutes = (60 - timer) / 60;
+                <div>
+                    <h5 class="fw-bold mb-1">
+                        <i class="fa-solid fa-keyboard text-primary me-2"></i>
+                        Typing Speed Test
+                    </h5>
 
-                let wpm = 0;
+                    <small class="text-secondary">
+                        Modern typing practice platform for better speed and accuracy.
+                    </small>
+                </div>
 
-                if (minutes > 0) {
-                    wpm = Math.round(typedWords / minutes);
-                }
+                <div class="text-secondary small">
+                    © <script type='text/javascript'>
+                        var creditsyear = new Date();
+                        document.write(creditsyear.getFullYear());
+                    </script> Typing Speed Test. All rights reserved.
+                </div>
 
-                wpmDisplay.innerText = wpm;
+            </div>
+        </div>
+    </footer>
 
-                let correctChars = 0;
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-                for (let i = 0; i < typed.length; i++) {
-                    if (typed[i] === paragraph[i]) {
-                        correctChars++;
-                    }
-                }
+    <!-- Typing Test Script -->
+    <script>
+        const paragraph = document.getElementById("paragraph").innerText;
+        const inputText = document.getElementById("inputText");
+        const timeDisplay = document.getElementById("time");
+        const wpmDisplay = document.getElementById("wpm");
+        const accuracyDisplay = document.getElementById("accuracy");
+        const startBtn = document.getElementById("startBtn");
+        const resetBtn = document.getElementById("resetBtn");
 
-                let accuracy = 100;
+        let timer = 60;
+        let interval = null;
+        let started = false;
 
-                if (typed.length > 0) {
-                    accuracy = Math.round((correctChars / typed.length) * 100);
-                }
-
-                accuracyDisplay.innerText = accuracy + "%";
-            }
-
-            inputText.addEventListener("input", () => {
-                if (!started) {
-                    started = true;
-                    startTimer();
-                }
+        function startTimer() {
+            interval = setInterval(() => {
+                timer--;
+                timeDisplay.innerText = timer;
 
                 calculateResults();
-            });
 
-            startBtn.addEventListener("click", () => {
-                inputText.focus();
-
-                if (!started) {
-                    started = true;
-                    startTimer();
+                if (timer <= 0) {
+                    clearInterval(interval);
+                    inputText.disabled = true;
                 }
-            });
+            }, 1000);
+        }
 
-            resetBtn.addEventListener("click", () => {
-                clearInterval(interval);
+        function calculateResults() {
+            const typed = inputText.value.trim();
+            const typedWords = typed.split(/\s+/).filter(word => word !== "").length;
 
-                timer = 60;
-                started = false;
+            const minutes = (60 - timer) / 60;
 
-                timeDisplay.innerText = "60";
-                wpmDisplay.innerText = "0";
-                accuracyDisplay.innerText = "100%";
+            let wpm = 0;
 
-                inputText.value = "";
-                inputText.disabled = false;
+            if (minutes > 0) {
+                wpm = Math.round(typedWords / minutes);
+            }
 
-                inputText.focus();
-            });
-        </script>
+            wpmDisplay.innerText = wpm;
 
-        <script src="https://hanapha.com/banner/socialbar.js"></script>
+            let correctChars = 0;
+
+            for (let i = 0; i < typed.length; i++) {
+                if (typed[i] === paragraph[i]) {
+                    correctChars++;
+                }
+            }
+
+            let accuracy = 100;
+
+            if (typed.length > 0) {
+                accuracy = Math.round((correctChars / typed.length) * 100);
+            }
+
+            accuracyDisplay.innerText = accuracy + "%";
+        }
+
+        inputText.addEventListener("input", () => {
+            if (!started) {
+                started = true;
+                startTimer();
+            }
+
+            calculateResults();
+        });
+
+        startBtn.addEventListener("click", () => {
+            inputText.focus();
+
+            if (!started) {
+                started = true;
+                startTimer();
+            }
+        });
+
+        resetBtn.addEventListener("click", () => {
+            clearInterval(interval);
+
+            timer = 60;
+            started = false;
+
+            timeDisplay.innerText = "60";
+            wpmDisplay.innerText = "0";
+            accuracyDisplay.innerText = "100%";
+
+            inputText.value = "";
+            inputText.disabled = false;
+
+            inputText.focus();
+        });
+    </script>
+
+    <script src="https://hanapha.com/banner/socialbar.js"></script>
 </body>
+
 </html>

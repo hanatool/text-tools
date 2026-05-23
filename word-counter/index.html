@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+        name='viewport' />
     <meta name="description" content="Modern responsive word counter tool with clean white design." />
     <meta name="keywords" content="word counter, character counter, text tool, online tool" />
     <meta name="author" content="OpenAI" />
@@ -19,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://hanapha.com/banner/popunder.js"></script>
 </head>
+
 <body class="bg-light text-dark">
 
     <!-- Header -->
@@ -44,7 +47,8 @@
             <h2 class="fw-bold mb-3">Simple & Modern Word Counter</h2>
 
             <p class="text-secondary mx-auto" style="max-width: 700px;">
-                Count words, characters, sentences, and paragraphs instantly with this responsive and minimalist online tool.
+                Count words, characters, sentences, and paragraphs instantly with this responsive and minimalist online
+                tool.
             </p>
         </div>
     </section>
@@ -65,12 +69,8 @@
                                 Enter Your Text
                             </label>
 
-                            <textarea 
-                                id="textInput"
-                                class="form-control rounded-4 p-3"
-                                rows="12"
-                                placeholder="Type or paste your text here..."
-                            ></textarea>
+                            <textarea id="textInput" class="form-control rounded-4 p-3" rows="12"
+                                placeholder="Type or paste your text here..."></textarea>
 
                             <!-- Stats -->
                             <div class="row text-center mt-4 g-3">
@@ -116,7 +116,9 @@
                             </h4>
 
                             <p class="text-secondary mb-0">
-                                This online word counter helps writers, students, bloggers, and professionals analyze text quickly and efficiently. The tool automatically calculates words, characters, sentences, and paragraphs in real-time.
+                                This online word counter helps writers, students, bloggers, and professionals analyze
+                                text quickly and efficiently. The tool automatically calculates words, characters,
+                                sentences, and paragraphs in real-time.
                             </p>
                         </div>
                     </div>
@@ -126,10 +128,8 @@
                 <!-- Ads -->
                 <div class="col-lg-4">
 
-                    <div class="card border-0 shadow-sm rounded-4">
-                        <div class="card-body p-4 text-center">
-                            <script src="https://hanapha.com/banner/ad.js"></script>
-                        </div>
+                    <div class="text-center">
+                        <script src="https://hanapha.com/banner/ad.js"></script>
                     </div>
 
                     <div class="card border-0 shadow-sm rounded-4 mt-4">
@@ -175,7 +175,10 @@
     <footer class="bg-white border-top py-4 mt-5">
         <div class="container text-center">
             <p class="mb-0 text-secondary">
-                © <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Word Counter Tool. All rights reserved.
+                © <script type='text/javascript'>
+                    var creditsyear = new Date();
+                    document.write(creditsyear.getFullYear());
+                </script> Word Counter Tool. All rights reserved.
             </p>
         </div>
     </footer>
@@ -197,9 +200,9 @@
             const text = textInput.value;
 
             // Words
-            const words = text.trim().length > 0
-                ? text.trim().split(/\s+/).length
-                : 0;
+            const words = text.trim().length > 0 ?
+                text.trim().split(/\s+/).length :
+                0;
 
             // Characters
             const chars = text.length;
@@ -219,4 +222,5 @@
 
     <script src="https://hanapha.com/banner/socialbar.js"></script>
 </body>
+
 </html>

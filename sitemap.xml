@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://tools.hanapha.com/text-tools/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url><loc>https://tools.hanapha.com/text-tools/bio-generator</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/case-converter</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/emoji-remover</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/fancy-text-generator</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/gmail-dot-trick</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/grammar-checker</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/lorem-ipsum-generator</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/name-generator</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/plagiarism-checker</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/random-text-generator</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/read-time-estimator</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/remove-duplicate-lines</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/remove-empty-lines</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/reverse-text</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/sentence-counter</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/text-diff-checker</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/text-repeater</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/typing-speed-test</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/unicode-converter</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/word-counter</loc></url>
+
+  <url><loc>https://tools.hanapha.com/text-tools/404.html</loc></url>
+  <url><loc>https://tools.hanapha.com/text-tools/index.html</loc></url>
+
+</urlset>
